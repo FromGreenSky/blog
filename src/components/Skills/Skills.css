@@ -1,0 +1,115 @@
+.container__skills{
+    height: 75vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.skills__text{
+    height: 40%;
+    display: grid;
+    align-content: space-evenly;
+
+}
+.skills__title{
+    font-size: 34px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+.skills__p{
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
+}
+.skills__img{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    @media (orientation: landscape) {
+        .container__skills{
+            height: 60vh;
+        }
+    }
+    @media (orientation: portrait){
+        .container__skills{
+            height: 40vh;
+        }
+    }
+    .sk__image{
+        height: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    @media (orientation: landscape) {
+        .container__skills{
+            height: 60vh;
+        }
+    }
+    @media (orientation: portrait){
+        .container__skills{
+            height: 40vh;
+        }
+    }
+    .sk__image{
+        width: 95%;
+        height: 95%;
+    }
+}
+
+@media (max-width: 767px){
+    .container__skills{
+        height: auto;
+        padding-top: 30px;
+    }
+    .skills__text{
+        height: 20vh;
+    }
+    .skills__img{
+        margin-top: 15px;
+        grid-template-columns: 1fr;
+    }
+    .sk__image{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .container__skills{
+        height: auto;
+        padding-top: 30px;
+    }
+    .skills__text{
+        height: 20vh;
+    }
+    .skills__img{
+        margin-top: 15px;
+        grid-template-columns: 1fr;
+    }
+    .sk__image{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 376px){
+    .container__skills{
+        height: auto;
+        padding-top: 40px;
+    }
+    .skills__text{
+        height: 20vh;
+    }
+    .skills__img{
+        margin-top: 15px;
+        grid-template-columns: 1fr;
+    }
+    .sk__image{
+        margin-bottom: 20px;
+    }
+}
